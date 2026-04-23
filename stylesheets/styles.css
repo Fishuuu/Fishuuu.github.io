@@ -1,32 +1,33 @@
 body {
   background-color: #fff;
-  padding:50px;
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color:#595959;
+  padding:56px;
+  font: 15px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color:#4d4d4d;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+  margin:0 0 14px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:0 0 18px;
 }
 
 h1, h2, h3 {
-  line-height:1.1;
+  line-height:1.2;
 }
 
 h1 {
-  font-size:28px;
-  font-weight: 500;
+  font-size:32px;
+  font-weight:600;
 }
 
 h2 {
-  color:#393939;
-  font-weight: 500;
+  color:#2f2f2f;
+  font-size:22px;
+  font-weight:600;
 }
 
 h3, h4, h5, h6 {
@@ -55,7 +56,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:900px;
   margin:0 auto;
 }
 
@@ -104,10 +105,21 @@ img {
 }
 
 header {
-  width:270px;
+  width:250px;
   float:left;
   position:fixed;
+  top:56px;
   -webkit-font-smoothing:subpixel-antialiased;
+}
+
+header h1 {
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+header p {
+  margin-bottom:0;
+  color:#666;
 }
 
 header ul {
@@ -170,9 +182,23 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:560px;
   float:right;
-  padding-bottom:50px;
+  padding-bottom:80px;
+}
+
+section h1 {
+  margin-bottom:16px;
+}
+
+section h2 {
+  margin-top:40px;
+  padding-top:24px;
+  border-top:1px solid #ececec;
+}
+
+section p {
+  max-width:62ch;
 }
 
 small {
@@ -187,10 +213,11 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:250px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:40px;
+  color:#777;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -208,14 +235,19 @@ footer {
   }
 
   header {
-    padding-right:320px;
+    padding-right:0;
+    margin-bottom:24px;
   }
 
   section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
+    border:0;
+    padding:0 0 40px;
+    margin:0;
+  }
+
+  section h2 {
+    margin-top:32px;
+    padding-top:18px;
   }
 
   header a small {
@@ -232,6 +264,15 @@ footer {
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
+    padding:28px;
+  }
+
+  h1 {
+    font-size:30px;
+  }
+
+  h2 {
+    font-size:21px;
   }
 
   header {
@@ -249,7 +290,20 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    padding:18px;
+  }
+
+  h1 {
+    font-size:26px;
+  }
+
+  h2 {
+    font-size:20px;
+  }
+
+  section h2 {
+    margin-top:28px;
+    padding-top:14px;
   }
 
   header ul {
