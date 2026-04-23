@@ -122,6 +122,17 @@ header p {
   color:#666;
 }
 
+header .profile-placeholder {
+  display:block;
+  width:136px;
+  max-width:100%;
+  height:auto;
+  margin:2px 0 12px;
+  border:1px solid #d7dde7;
+  border-radius:10px;
+  background:#f5f7fa;
+}
+
 header ul {
   list-style:none;
   height:40px;
@@ -279,6 +290,11 @@ footer {
     padding:0;
   }
 
+  header .profile-placeholder {
+    width:120px;
+    margin-bottom:10px;
+  }
+
   header ul, header p.view {
     position:static;
   }
@@ -304,6 +320,10 @@ footer {
   section h2 {
     margin-top:28px;
     padding-top:14px;
+  }
+
+  header .profile-placeholder {
+    width:104px;
   }
 
   header ul {
